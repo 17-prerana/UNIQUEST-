@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniQuest - Oracle</title>
+    <link rel="stylesheet" href="oracle.css" />
+  </head>
+
+  <body>
+    <nav class="topbar">
+      <div class="brand">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="UniQuest Logo" class="nav-icon" />
+        <div class="brand-text">
+          <h1>UniQuest</h1>
+          <p>Your Academic Adventure</p>
+        </div>
+      </div>
+
+      <div class="nav-links" aria-label="Main navigation">
+        <a href="realm.html">Realm Map</a>
+        <a href="questlog.html">Quest Log</a>
+        <a href="oracle.html" class="active">Academic Oracle</a>
+      </div>
+
+      <div class="user-status">
+        <div class="status-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book" class="status-icon" />
+          <span class="rank">Novice Scholar</span>
+        </div>
+        <div class="xp-badge">30 XP</div>
+        <div class="quest-badge">1/14 Quests</div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="oracle card">
+        <h3>🧙Academic Oracle</h3>
+        <p>What design pattern is React based on?</p>
+        <div class="oracle-buttons">
+          <button id="showHint" class="btn small">Show Hint</button>
+          <button id="revealAnswer" class="btn small purple">
+            Reveal Answer
+          </button>
+        </div>
+        <p id="oracleAnswer" class="hidden">
+          It’s based on the Component Pattern.
+        </p>
+        <small>Daily wisdom awaits the curious mind</small>
+      </div>
+
+      <div class="bridge card">
+        <h3> Bridge to Next Realm</h3>
+        <p>Prepare for what lies ahead (0/5)</p>
+        <ul class="bridge-list">
+          <li>
+            <input type="checkbox" /> Download required software for next
+            semester
+          </li>
+          <li><input type="checkbox" /> Preview upcoming course syllabus</li>
+          <li>
+            <input type="checkbox" /> Organize notes from completed quests
+          </li>
+          <li><input type="checkbox" /> Join study groups for next realm</li>
+          <li><input type="checkbox" /> Rest and recharge your mind</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup-box">
+        <h2>Action Confirmed</h2>
+        <p>
+          Your button has been clicked. You can customize this message later.
+        </p>
+        <button class="popup-close" id="closePopup">Close</button>
+      </div>
+    </div>
+    <script src="oracle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniQuest - Realm Map</title>
+  <link rel="stylesheet" href="realm.css" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="brand">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="UniQuest Logo" class="nav-icon" />
+      <div class="brand-text">
+        <h1>UniQuest</h1>
+        <p>Your Academic Adventure</p>
+      </div>
+    </div>
+
+    <div class="nav-links" aria-label="Main navigation">
+      <a href="realm.html" class="active">Realm Map</a>
+      <a href="questlog.html">Quest Log</a>
+      <a href="oracle.html">Academic Oracle</a>
+    </div>
+
+    <div class="user-status">
+      <div class="status-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book" class="status-icon" />
+        <span class="rank">Novice Scholar</span>
+      </div>
+      <div class="xp-badge">30 XP</div>
+      <div class="quest-badge">1/14 Quests</div>
+    </div>
+  </nav>
+
+  <div class="main-wrapper">
+    <header>
+      <span class="eyebrow">Realm Overview</span>
+      <h1>UniQuest</h1>
+      <p>Your Academic Adventure</p>
+    </header>
+
+    <section class="profile card">
+      <div class="profile-top">
+        <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book Icon" class="icon" />
+        <div>
+          <h2>Novice Scholar</h2>
+          <p class="level">Level 1</p>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-box">
+          <span>Current XP</span>
+          <strong>30</strong>
+        </div>
+        <div class="stat-box">
+          <span>Quests</span>
+          <strong>1/14</strong>
+        </div>
+        <div class="stat-box">
+          <span>Realm</span>
+          <strong>I</strong>
+        </div>
+      </div>
+
+      <div class="xp-bar">
+        <div class="xp-fill" style="width: 30%;"></div>
+      </div>
+      <div class="xp-stats">
+        <span>30 XP</span>
+        <span>100 XP</span>
+      </div>
+      <p class="progress-text">70 XP to <span class="highlight">Apprentice</span></p>
+    </section>
+
+    <section class="realm-map card">
+      <div class="section-heading">
+        <span class="eyebrow">Progress Path</span>
+        <h3>Realm Map</h3>
+      </div>
+
+      <div class="realm">
+        <div class="circle active">1</div>
+        <div class="details">
+          <div class="realm-title">
+            <h4>The Awakening</h4>
+            <span class="realm-chip active-chip">Active</span>
+          </div>
+          <p>Semester I</p>
+          <div class="realm-progress">
+            <div class="realm-fill" style="width: 25%;"></div>
+          </div>
+          <small>1/4 quests completed</small>
+        </div>
+      </div>
+
+      <div class="realm locked">
+        <div class="circle lock">2</div>
+        <div class="details">
+          <div class="realm-title">
+            <h4>The Proving Grounds</h4>
+            <span class="realm-chip">Locked</span>
+          </div>
+          <p>Semester II</p>
+        </div>
+      </div>
+
+      <div class="realm locked">
+        <div class="circle lock">3</div>
+        <div class="details">
+          <div class="realm-title">
+            <h4>The Dark Forest</h4>
+            <span class="realm-chip">Locked</span>
+          </div>
+          <p>Semester III</p>
+        </div>
+      </div>
+
+      <div class="realm locked">
+        <div class="circle lock">4</div>
+        <div class="details">
+          <div class="realm-title">
+            <h4>The Summit</h4>
+            <span class="realm-chip">Locked</span>
+          </div>
+          <p>Semester IV</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="realm.js"></script>
+</body>
+</html>

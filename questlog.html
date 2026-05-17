@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniQuest - Quest Log</title>
+  <link rel="stylesheet" href="questlog.css" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="brand">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="UniQuest Logo" class="nav-icon" />
+      <div class="brand-text">
+        <h1>UniQuest</h1>
+        <p>Your Academic Adventure</p>
+      </div>
+    </div>
+
+    <div class="nav-links" aria-label="Main navigation">
+      <a href="realm.html">Realm Map</a>
+      <a href="questlog.html" class="active">Quest Log</a>
+      <a href="oracle.html">Academic Oracle</a>
+    </div>
+
+    <div class="user-status">
+      <div class="status-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book" class="status-icon" />
+        <span class="rank">Novice Scholar</span>
+      </div>
+      <div class="xp-badge">30 XP</div>
+      <div class="quest-badge">1/14 Quests</div>
+    </div>
+  </nav>
+
+  <div class="questlog-container">
+    <div class="quest-log card">
+      <h2>📜 Quest Log</h2>
+      <p class="semester-title">The Awakening — Semester I</p>
+
+      <h3 class="section-title active-title">Active Quests</h3>
+
+      <div class="quest-list">
+        <div class="quest">
+          <div class="quest-info">
+            <img src="https://cdn-icons-png.flaticon.com/512/2370/2370264.png" alt="Calc Icon" />
+            <div>
+              <h4>Calculus I</h4>
+              <p>Master the fundamentals of limits and derivatives</p>
+            </div>
+          </div>
+          <div class="quest-action">
+            <span class="xp">+50 XP</span>
+            <button class="btn vanquish">Vanquish!</button>
+          </div>
+        </div>
+
+        <div class="quest">
+          <div class="quest-info">
+            <img src="https://cdn-icons-png.flaticon.com/512/2721/2721292.png" alt="Programming Icon" />
+            <div>
+              <h4>Introduction to Programming</h4>
+              <p>Learn the ancient art of code</p>
+            </div>
+          </div>
+          <div class="quest-action">
+            <span class="xp">+60 XP</span>
+            <button class="btn vanquish">Vanquish!</button>
+          </div>
+        </div>
+
+        <div class="quest">
+          <div class="quest-info">
+            <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Physics Icon" />
+            <div>
+              <h4>Physics I</h4>
+              <p>Unravel the laws governing the physical realm</p>
+            </div>
+          </div>
+          <div class="quest-action">
+            <span class="xp">+50 XP</span>
+            <button class="btn vanquish">Vanquish!</button>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title vanquished-title">Vanquished (1)</h3>
+
+      <div class="quest completed">
+        <div class="quest-info">
+          <img src="https://cdn-icons-png.flaticon.com/512/2995/2995620.png" alt="Writing Icon" />
+          <div>
+            <h4 class="strikethrough">Academic Writing</h4>
+            <p>Forge your words into powerful essays</p>
+          </div>
+        </div>
+        <div class="quest-action">
+          <span class="xp">+30 XP</span>
+          <button class="btn undo">Undo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="questlog.js"></script> 
+</body>
+</html>
